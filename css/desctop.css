@@ -1,0 +1,107 @@
+@media (min-width: 1200px){
+    .container{
+        width: 1200px;
+        margin: 40px 0;
+    }
+    .headline h1{
+        font-size: 30px;
+    }
+    .headline > div{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 33px;
+        margin-bottom: 20px;
+    }
+    .headline p{
+        margin-top: 20px;
+        font-size: 16px;
+        max-width: 893px;
+    }
+    .headline div input, .headline div label{
+        display: none;
+    }
+    .headline hr{
+        left: calc((1200px - 100vw)/2);
+    }
+    .investments{
+        margin: 80px 0 40px 0;
+    }
+    .investments h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .investments-block, .stock, .calendar{
+        border: 1px solid var(--pale);
+        border-radius: 5px;
+        padding: 30px;
+    }
+    .investments-block{
+        height: 215px;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+    .investments-block:hover{
+        box-shadow: 0px 5px 20px rgba(51, 62, 80, 0.15);
+    }
+    .investments-block:first-of-type, .investments-block:nth-of-type(4){
+        width: 688px;
+    }
+    .investments-block:nth-of-type(2), .investments-block:nth-of-type(3){
+        width: 482px;
+    }
+    .investments-block:nth-of-type(5), .investments-block:nth-of-type(6){
+        width: 584px;
+    }
+    .investments-block:first-of-type, .investments-block:nth-of-type(3), .investments-block:nth-of-type(5){
+        margin-right: 25px;
+    }
+    .investments-block h3, .stock h3, .calendar h3{
+        font-size: 22px;
+    }
+    .investments-block h3{
+        margin-bottom: 10px;
+    }
+    .investments-block p{
+        font-size: 16px;
+        margin-bottom: 45px;
+    }
+    .investments-block img{
+        width: 180px;
+        height: 180px;
+    }
+    .stock-calendar-container{
+        display: flex;
+    }
+    .stock, .calendar{
+        width: 585px;
+    }
+    .stock{
+        margin-right: 25px;
+    }
+    .stock > div:last-of-type{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .stock > div:last-of-type p{
+        margin: 0;
+        color: var(--ligth-grey);
+        font-size: 14px;
+    }
+    table{
+        margin-bottom: 23px;
+    }
+    tr:not(:first-of-type) td{
+        padding: 14px 0;
+    }
+    .mobile-calendar{
+        display: none;
+    }
+    .calendar ul{
+        list-style-type: none;
+        margin-bottom: 40px;
+    }
+    li p:last-of-type{
+        font-size: 14px;
+    }
+}

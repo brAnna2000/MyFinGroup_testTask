@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/selectric.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headline">
+            <h1>Облигации в России</h1>
+            <div>
+                <input class="show-text" type="checkbox" id="check">
+                <label for="check">Показать весь <img class="lozad" data-src="images/blue-arrow-down.svg"></label> 
+                <p>
+                Облигации федерального, субфедерального займа, еврооблигации и облигации самых известных компаний России.
+                Изучайте стоимость облигаций и ее изменение, доходность, купонные выплаты и многие другие показатели. 
+                Чтобы узнать больше про облигации и инвестирование в ценные бумаги, посетите наш <a href="#">образовательный раздел</a>
+                с множеством полезной информации.
+                </p>
+                <img class="lozad" data-src="images/stock.svg">
+            </div>
+            <form class="seacrh">
+                <input name="search" placeholder="Название или тикер" type="text" required="required">
+                <button type="submit"></button>
+                <button type="reset"></button>
+                <button type="disabled"></button>
+            </form>
+            <hr>
+        </div>
+        <div class="investments">
+            <h2>Все об инвестициях</h2>
+            <div class="investments-block">
+                <h3>Акции</h3>
+                <p>Покупка акций российских и мировых компаний</p>
+                <button class="investments-block__green-btn">Купить</button>
+                <img class="lozad" data-src="images/investsments/mobile/img_akcii2_mobile.svg">
+            </div>
+            <div class="investments-block">
+                <h3>Облигации</h3>
+                <p>Покупка акций российских и мировых компаний</p>
+                <button class="investments-block__green-btn">Подобрать</button>
+            </div>
+            <div class="investments-block">
+                <h3>Дивиденды</h3>
+                <p>Размеры дивидендов и даты выплат на календаре</p>
+                <button class="investments-block__white-btn">Подробнее</button>
+            </div>
+            <div class="investments-block">
+                <h3>Индивидуальный инвестиционный счет</h3>
+                <p>Откройте счет и увеличивайте доходность своих инвестиций</p>
+                <button class="investments-block__green-btn">Открыть ИИС</button>
+                <img class="lozad" data-src="images/investsments/mobile/img_iis_mobile.svg">
+            </div>
+            <div class="investments-block">
+                <h3>Брокеры</h3>
+                <p>Инвестируйте вместе с профессионалами.</p>
+                <button class="investments-block__white-btn">Выбрать</button>
+                <img class="lozad" data-src="images/investsments/mobile/img_brokers_mobile.svg">
+            </div>
+            <div class="investments-block">
+                <h3>Обучение</h3>
+                <p>Учитесь инвестировать БЕСПЛАТНО вместе с Банкирос</p>
+                <button class="investments-block__white-btn">Пройти обучение</button>
+            </div>   
+        </div>
+        <div class="stock-calendar-container">
+            <div class="stock">
+                <div>
+                    <h3>Акции</h3>
+                    <select name="stockDays">
+                        <option value="1">1 день</option>
+                        <option value="2">2 день</option>
+                        <option value="3">3 день</option>
+                        <option value="4">4 день</option>
+                    </select>
+                </div>
+                <nav>
+                    <div class="tab">
+                        <input type="radio" id="tab1" name="tab-group" checked>
+                        <label for="tab1" class="tab__title">Лидеры роста</label> 
+                    </div>
+                    <div class="tab">
+                        <input type="radio" id="tab2" name="tab-group">
+                        <label for="tab2" class="tab__title">Tab inactive</label> 
+                    </div> 
+                </nav>
+                <table>
+                    <tr>
+                        <td>Тикер</td>
+                        <td>Посл. цена</td>
+                        <td>Изм.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="lozad" data-src="images/stock/vtb-logo.svg">
+                            <div>
+                                <p>ВТБ банк</p>
+                                <p>VTBR</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>4.790 ₽</p>
+                        </td>
+                        <td class="green-rate">
+                            <p><img class="lozad" data-src="images/stock/arrow-up.svg"> 8.27%</p>
+                            <p>0.36 ₽</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="lozad" data-src="images/stock/no-logo.svg">
+                            <div>
+                                <p>Пао «Русгидро»</p>
+                                <p>HYDR</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>0.0132 ₽</p>
+                        </td>
+                        <td class="red-rate">
+                            <p><img class="lozad" data-src="images/stock/arrow-down.svg"> 4.83 %</p>
+                            <p>0.36 ₽</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="lozad" data-src="images/stock/disney-logo.svg">
+                            <div>
+                                <p>The Walt Disney Company</p>
+                                <p>DIS-RM</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>10 900 $</p>
+                        </td>
+                        <td class="green-rate">
+                            <p><img class="lozad" data-src="images/stock/arrow-up.svg"> 4.34 %</p>
+                            <p>0.36 ₽</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="lozad" data-src="images/stock/gazprom-logo.svg">
+                            <div>
+                                <p>Газпром</p>
+                                <p>GAZP</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>25.70 ₽</p>
+                        </td>
+                        <td class="green-rate">
+                            <p><img class="lozad" data-src="images/stock/arrow-up.svg"> 4.34 %</p>
+                            <p>0.36 ₽</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="lozad" data-src="images/stock/disney-logo.svg">
+                            <div>
+                                <p>The Walt Disney Company</p>
+                                <p>DIS-RM</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>10 900 $</p>
+                        </td>
+                        <td class="green-rate">
+                            <p><img class="lozad" data-src="images/stock/arrow-up.svg"> 4.34 %</p>
+                            <p>0.36 ₽</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="lozad" data-src="images/stock/cisco-logo.svg">
+                            <div>
+                                <p>Cisco Systems, Inc.</p>
+                                <p>CSCO-RM</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>25.70 ₽</p>
+                        </td>
+                        <td class="green-rate">
+                            <p><img class="lozad" data-src="images/stock/arrow-up.svg"> 4.34 %</p>
+                            <p>0.36 ₽</p>
+                        </td>
+                    </tr>
+                </table> 
+                <div>
+                    <p>Обновлено в 12:30</p>     
+                    <a href="#">Больше лидеров роста <img class="lozad" data-src="images/blue-arrow.svg"></a>
+                </div>
+            </div>
+            <div class="calendar">
+                <h3>Экономический календарь</h3>
+                <div class="mobile-calendar">
+                    <p>Ноябрь 17</p>
+                    <ul>
+                        <li>
+                            <p>13:00</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="red"></div>
+                            <p>Индекс цен на продовольствие</p>
+                        </li>
+                        <li>
+                            <p>13:00</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="red"></div>
+                            <p>Индекс цен на продовольствие</p>
+                        </li>
+                        <li>
+                            <p>13:00</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="red"></div>
+                            <p>Employment Overall Flash</p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/united-states-of-america.svg">
+                            <div class="orange"></div>
+                            <p>Изменение занятости (кв/кв)</p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/united-states-of-america.svg">
+                            <div class="orange"></div>
+                            <p>ИПЦ Франции</p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="red"></div>
+                            <p>PPI exFood/Energy MM</p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="green"></div>
+                            <p>Речь члена FOMC Уильямса</p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/united-states-of-america.svg">
+                            <div class="orange"></div>
+                            <p>Базовый индекс цен производителей (PPI) (г/г) (окт)</p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="red"></div>
+                            <p>Индекс PCSI Thomson Reuters/Ipsos</p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="green"></div>
+                            <p>EIA-Nat Gas Chg Bcf</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="desctop-calendar">
+                    <p>Ноябрь 17</p>
+                    <ul>
+                        <li>
+                            <p>13:00</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="red"></div>
+                            <p>Индекс цен на продовольствие</p>
+                        </li>
+                        <li>
+                            <p>13:00</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="red"></div>
+                            <p>Employment Overall Flash</p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/united-states-of-america.svg">
+                            <div class="orange"></div>
+                            <p>Изменение занятости (кв/кв)</p>
+                        </li>
+                        <li>
+                            <p>23:15</p>
+                            <img class="lozad" data-src="images/united-states-of-america.svg">
+                            <div class="orange"></div>
+                            <p>Изменение занятости (кв/кв), ИПЦ Франции, базовый индекс цен производителей (PPI) (г/г) (окт)</p>
+                        </li>
+                    </ul>
+                    <p>Ноябрь 18</p>
+                    <ul>
+                        <li>
+                            <p>09:00</p>
+                            <img class="lozad" data-src="images/united-states-of-america.svg">
+                            <div class="orange"></div>
+                            <p>ИПЦ Франции</p>
+                        </li>
+                        <li>
+                            <p>14:40</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="red"></div>
+                            <p>PPI exFood/Energy MM</p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/russia.svg">
+                            <div class="green"></div>
+                            <p>Речь члена FOMC Уильямса </p>
+                        </li>
+                        <li>
+                            <p>16:45</p>
+                            <img class="lozad" data-src="images/united-states-of-america.svg">
+                            <div class="orange"></div>
+                            <p>Базовый индекс цен производителей (PPI) (г/г) (окт)</p>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#">Больше событий <img class="lozad" data-src="images/blue-arrow.svg"></a>
+            </div>
+        </div>
+        </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="js/lozad.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.selectric.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
